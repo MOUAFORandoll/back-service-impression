@@ -1,0 +1,70 @@
+version: '3'
+services:
+
+  #PHP Service
+  alerte:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: digitalocean.com/php
+    container_name: alerte
+    restart: unless-stopped
+    tty: true
+    environment:
+      SERVICE_NAME: alerte
+      SERVICE_TAGS: dev
+    working_dir: /var/www/alerte
+    volumes:
+      - ./:/var/www/alerte
+      - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
+    networks:
+      - backend
+
+  #Nginx Service
+  webserver:
+    image: nginx:alpine
+    container_name: alerte_webserver
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "8003:80"
+      - "444:443"
+    volumes:
+      - ./:/var/www/alerte
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+    networks:
+      - backend
+    environment:
+      - DB_CONNECTION=pgsql
+      - DB_HOST=alerte_postgresql
+      - DB_PORT=5433
+      - DB_DATABASE=DB_ALERTE
+      - DB_USERNAME=postgres
+
+  #Postgres Service
+  alerte_postgresql:
+    image: postgres
+    container_name: alerte_postgresql
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "5433:5433"
+    volumes:
+      - './postgres-data:/var/lib/postgresql/data'
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_DATABASE}
+      POSTGRES_PORT: ${DB_PORT}
+    networks:
+      - backend
+
+#Docker Networks
+networks:
+  backend:
+    driver: bridge
+
+#Volumes
+volumes:
+  db-pgsql:
+    driver: local
