@@ -13,6 +13,7 @@ Homestead.yaml
 node_modules/ 
 /storage
 dist/ 
+public/pdf 
 # Compiled Java class files
 *.class
 
