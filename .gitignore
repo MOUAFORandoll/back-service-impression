@@ -11,9 +11,8 @@ Homestead.yaml
 
 # Node artifact files
 node_modules/ 
-/storage
-dist/ 
-public/pdf 
+dist/
+public/pdf
 # Compiled Java class files
 *.class
 
