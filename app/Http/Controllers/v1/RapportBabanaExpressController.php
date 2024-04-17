@@ -17,7 +17,7 @@ class RapportBabanaExpressController extends Controller
     {
         $data = $request->all();
         $data = compact('data');
-        
+
         $pdf = Pdf::loadView('rapport', $data)/* ->setPaper('a4', 'landscape') */;
         $rapport = 'Rapport_' . $this->reference() . '.pdf';
         $path = 'pdf/' . $rapport;
