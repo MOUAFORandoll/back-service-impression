@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,700,800,900&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900&display=swap' rel='stylesheet'>
 
-    <title>Medsurlink</title>
+    <title>BabanaExpress</title>
     <style>
         body {
             font-size: 0.9em;
@@ -163,7 +163,7 @@
 <body>
     <div style="color: black">
         <div class="rapport-logo-wrapper">
-            <img src="https://www.back.medsurlink.com/images/logo.png" class="logo-rapport" alt="" />
+            <img src="https://www.back.BabanaExpress.com/images/logo.png" class="logo-rapport" alt="" />
         </div>
         <h1 class="titre-rapport"><strong>Rapport de consultation</strong></h1>
         <br>

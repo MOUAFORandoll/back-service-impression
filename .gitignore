@@ -12,7 +12,8 @@ Homestead.yaml
 # Node artifact files
 node_modules/ 
 dist/
-public/pdf
+public/pdf/rapport_livraison
+public/pdf/bon_livraison_medicaments
 # Compiled Java class files
 *.class
 

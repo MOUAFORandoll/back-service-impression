@@ -31,7 +31,7 @@ class ActivationEmailEtablissement  extends Mailable
      */
     public function build()
     {
-        return $this->from('no-reply@medsurlink.com')
+        return $this->from('no-reply@BabanaExpress.com')
             ->subject(config('app.name') . ' Demande d\'activation')
             ->with(['etablissement' => $this->etablissement])
             ->markdown('emails.activate-etablissement');

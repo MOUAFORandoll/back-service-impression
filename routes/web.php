@@ -26,6 +26,7 @@ $router->group(['prefix' => 'api/v1', 'namespace' => 'v1'], function () use ($ro
     $router->group(['prefix' => 'rapport-babanaexpress'], function () use ($router) {
 
         $router->post('/livraison', ['uses' => 'RapportBabanaExpressController@livraison']);
+        $router->post('/bon-livraison-medicament', ['uses' => 'RapportBabanaExpressController@bonLivraisonMedicament']);
     });
 });
 //

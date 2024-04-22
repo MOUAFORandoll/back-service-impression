@@ -5,7 +5,7 @@
     <div id="pageNumbers" style="float: right; color: #fff; margin-right: 2rem; font-size:0.5rem;">
         <div class="page-number"></div>
     </div>
-    <h4 class="text-left p-0 m-0 white" style='margin-left: 2rem; font-size:0.8rem'>Contact Medsurlink </h4>
+    <h4 class="text-left p-0 m-0 white" style='margin-left: 2rem; font-size:0.8rem'>Contact BabanaExpress </h4>
     <ul class="list-none" style="margin-left: 2rem">
         <li class="li-top text-left">
             <span>
@@ -14,7 +14,7 @@
             </span>
             <span>
                 <span class="title">Email :</span>
-                <span class="infoA  ">contact@medsurlink.com</span>
+                <span class="infoA  ">contact@BabanaExpress.com</span>
             </span>
             <span>
                 <span class="title">Site web :</span>

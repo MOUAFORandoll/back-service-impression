@@ -40,6 +40,6 @@ docker-compose exec alerte php artisan config:cache`
 /usr/bin/php8.2 artisan db:seed --class=EtablissementDefautSeeder
 
 /usr/bin/php8.2 artisan migrate --path=/database/migrations/2023_12_28_111613_update_rendez_vous_table.php
-// sudo a2ensite redirections-medicasure.medsurlink-le-ssl.conf
+// sudo a2ensite redirections-medicasure.BabanaExpress-le-ssl.conf
 /usr/bin/php8.2 artisan db:seed --class=TypeConsultationSeeder
 /usr/bin/php8.2 artisan db:seed --class=EtablissementSeederNewUpdate

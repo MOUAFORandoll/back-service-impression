@@ -67,6 +67,18 @@
 .mt-3 {
   margin-top: 1rem !important;
 }
+/* Margin */
+.ms-1 {
+  margin-top: 0.25rem !important;
+}
+
+.ms-2 {
+  margin-top: 0.5rem !important;
+}
+
+.ms-3 {
+  margin-top: 1rem !important;
+}
 
 :root {
   --bs-breakpoint-xs: 0;
@@ -412,10 +424,14 @@ td {
 }
 
 .se {
+    padding-top: 10px;
+    padding-bottom: 10px;
   background-color: rgba(0, 190, 197, 1);
   color: white;
 }
 
+
+ 
 
 .d-flex {
   display: flex !important;
